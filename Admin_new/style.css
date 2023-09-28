@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+
+*{
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+h1 {
+    color: #333;
+} 
+ .questionnaire-main{
+    width: 100%;
+    height: 100vh;
+ }
+ .Editor-questionnaire{
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    justify-content: space-between;
+ }
+.question-form {
+    width: 95%;
+    height: 97vh;
+    margin: 0px 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #B62242;
+    border-radius: 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+textarea{
+    font-size: 15px;
+    border: 1px solid #333;
+    outline: none;
+    padding: 5px 0px 0 15px;
+    border-radius: 5px;
+}
+input[type='radio']{
+    transform: scale(1.4);
+    margin: 5px;
+}
+input{
+    margin-top: 20px;
+}
+.question-form input,select{
+    width: 260px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-top: 20px;
+    
+}
+.question-form button{
+    width: 70px;
+    padding: 9px;
+    /* font-size: 20px; */
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.question-form #add-btn{
+   background-color: green;
+}
+.question-form #edit-btn{
+    background-color: #4CAF50;
+}
+.question-form #delete-btn{
+    background-color: red;
+}
+
+.question-list {
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+#flieInput{
+    margin-bottom: -25px;
+    background-color: transparent;
+}
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #084cdf;
+  }
+.answer-image {
+    max-width: 100px;
+    max-height: 100px;
+    
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.radioButtonDiv{
+    width: 95%;
+    /* margin-left: 138px; */
+}
+.radioButtonDiv .mainDiv{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    margin-left: -10px;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #ccc;
+    text-align: start;
+    
+}
+.spanDiv{
+    text-align: end;
+}
+.spanDiv .Stext{
+    width: 100%;
+    height: 52px;
+    margin-top: -9px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+h3 span{
+    width: 750px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+}
+.text-editor {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family: verdana, sans-serif;
+    text-align: left;
+    border-radius: 10px;
+    
+}
+.toolbar {
+    margin-top: -29px;
+}
+button{
+    border: none;
+    background-color: transparent;
+    padding: 6px;
+}
+.toolbar button.active {
+    background-color: #333;
+    color: #fff;
+}
+#font-size{
+    width: 50px;
+}
+.mainDiv{
+    position: relative;
+    margin: 10px 0 10px 0;
+}
+.SeltctBtn{
+    background:#f67d04;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 10px;
+    right: -10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+    transition:0.5s all ease;
+}
+.mainDiv:hover > .SeltctBtn{
+    opacity:1;
+}
+.SeltctBtn.active{
+    background-color: #4CAF50;
+    color: #fff;
+}
+#font-family{
+    width: 190px;
+    border: 1px solid #ccc;
+    
+}

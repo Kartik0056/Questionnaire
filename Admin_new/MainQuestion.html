@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Panel</title>
+</head>
+<body> 
+    <section class="questionnaire-main">
+    
+    
+    <div class="Editor-questionnaire">
+    <!-- Question Form --> 
+    <div class="question-form">
+        <h2>Add/Edit Question</h2>
+        <input type="text" id="question" placeholder="Question" title="Write Question Here">
+        <input type="file" id="flieInput" >
+        <input type="text" id="answer" placeholder="Answer (Image URLs separated by commas or Text)" title="Answer (Image URLs separated by commas or Text)">
+        <select id="answer-type" title="Select Input Type">
+            <option selected>Select Type</option>
+            <option value="text">MultipleTextLine</option>
+            <option value="Stext">SingleTextLine</option>
+            <!-- <option value="Select" id="selectTag">SelectOption</option> -->
+            <option value="radio">Choose One From multiple</option>
+            <option value="checkbox">Choose multiple</option>
+        </select>
+        <button id="add-btn" title="Click To Add Question">Add</button>
+        <button id="edit-btn" title="Click To Edit Question">Edit</button>
+        <button id="delete-btn" title="Click To Delete Question">Delete</button>
+    </div>
+
+    <!-- Question List -->
+    <div class="question-list">
+        <h2>Question List</h2>
+        <div id="questions"></div>
+    </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+
+</body>
+</html>
